@@ -1,7 +1,29 @@
-{% extends 'base.html' %}
-{% block title %}Short Stories{% endblock %}
-{% block body %}
-<div class="wrapper">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Info</title>
+    <link rel="stylesheet" type="text/css" href="/static/blog_css.css">
+    <!-- All credit for the stars goes to https://www.script-tutorials.com/night-sky-with-twinkling-stars/ -->
+    <link rel="stylesheet" type="text/css" href="/static/starry_css.css">
+    <link rel="icon" href="/static/lotus.ico" sizes="32x32">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li><a href="index">Home</a></li>
+            <li><a href="pages/blog">Blog</a></li>
+            <li><a href="pages/contactinfo">Contact Info</a></li>
+            <li><a href="pages/about">About</a></li>
+        </ul>
+    </div>
+
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+    <div class="wrapper">
         <div class="post">
             <h1>Feedback</h1>
             <hr>
@@ -37,4 +59,6 @@
         </div>
 
     </div>
-{% endblock %}
+</body>
+
+</html>
