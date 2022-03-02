@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>{% block title %}{% endblock %}</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="/static/blog_css.css">
     <!-- All credit for the stars goes to https://www.script-tutorials.com/night-sky-with-twinkling-stars/ -->
     <link rel="stylesheet" type="text/css" href="/static/starry_css.css">
@@ -12,13 +12,10 @@
 <body>
     <div class="nav-bar">
         <ul>
-            <li {% if request.path == "/index/" %} class='active'{% endif %}><a href="/index">Home</a></li>
-            <li {% if request.path == "/blog/" %} class='active'{% endif %}><a href="/blog">Blog</a></li>
-            <li {% if request.path == "/feedback/" %} class='active'{% endif %}><a href="/feedback">Feedback</a></li>
-            <li {% if request.path == "/about/" %} class='active'{% endif %}><a href="/about">About</a></li>
-            {% if request.path == '/admin/' %}
-				<li style="float:right"><a href="/logout">Logout</a></li>
-            {% endif %}
+            <li><a href="/index">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/feedback">Feedback</a></li>
+            <li><a href="/about">About</a></li>
         </ul>
     </div>
 
